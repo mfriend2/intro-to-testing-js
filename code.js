@@ -15,5 +15,5 @@ function plusOne(num) {
 //sayHello
 
 function sayHello(){
-
+    return ""
 }

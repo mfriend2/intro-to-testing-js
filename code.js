@@ -36,3 +36,15 @@ function isFive(input) {
 function isEven(input) {
     return input % 2 === 0;
 }
+
+// isVowel
+
+function isVowel(input) {
+    if (typeof input !== "string") {
+        return false;
+    } else {
+        let vowels = ['a', 'e', 'i', 'o', 'u'];
+        return vowels.includes(input.toLowerCase());
+    }
+}
+

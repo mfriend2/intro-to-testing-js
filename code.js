@@ -24,3 +24,16 @@ function sayHello(input){
     }
     return "Hello, " + input + "!";
 }
+
+//isFive
+
+function isFive(input) {
+    if (typeof input === "number") {
+        return true;
+    } else if (isNaN(input)) {
+        return false;
+    } else {
+        return false;
+    }
+
+}

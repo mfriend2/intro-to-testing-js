@@ -76,3 +76,18 @@ describe('sayHello',function () {
     })
 })
 
+describe('isFive', function () {
+    it('should be defined a function', function () {
+        expect(typeof isFive).toBe("function");
+    });
+    it('should return a boolean for the entered value', function () {
+        expect(isFive("Mike")).toBe(false);
+    });
+    it('should return true when passed the value 5', function () {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return true when passed the string "5"', function () {
+        expect(isFive("5")).toBe(false);
+    });
+})
+

@@ -25,15 +25,14 @@ function sayHello(input){
     return "Hello, " + input + "!";
 }
 
-//isFive
+// isFive
 
 function isFive(input) {
-    if (typeof input === "number") {
-        return true;
-    } else if (isNaN(input)) {
-        return false;
-    } else {
-        return false;
-    }
+    return input === 5;
+}
 
+// isEven
+
+function isEven(input) {
+    return input % 2 === 0;
 }

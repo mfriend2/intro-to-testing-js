@@ -15,5 +15,12 @@ function plusOne(num) {
 //sayHello
 
 function sayHello(input){
-    return "Hello, " + input + "!"
+    if (typeof input !== "string")  {
+        return "Hello, World!";
+    } else if (input === "") {
+        return "Hello, Blank!";
+    } else if (!isNaN(input)) {
+        return "Hello, World!";
+    }
+    return "Hello, " + input + "!";
 }

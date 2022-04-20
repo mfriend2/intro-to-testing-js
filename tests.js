@@ -50,5 +50,29 @@ describe('sayHello',function () {
     it('should return "Hello, Pat!"', function () {
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
+    it('should return "Hello, World!" when the argument is undefined', function () {
+        expect(sayHello()).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when passed true', function () {
+        expect(sayHello(true)).toBe("Hello, World!");
+    })
+    it('should return "Hello, World!" when passed false', function () {
+    expect(sayHello(false)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when the argument is null', function () {
+        expect(sayHello(null)).toBe("Hello, World!");
+    });
+    it('should return "Hello, Blank!" when passed "" as an argument', function () {
+        expect(sayHello("")).toBe("Hello, Blank!");
+    });
+    it('should return "Hello, World!" when passed 2.3 as an argument', function () {
+        expect(sayHello(2.3)).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" when passed "5" as an argument', function () {
+        expect(sayHello("5")).toBe("Hello, World!");
+    });
+    it('should return "Hello, World!" for any data types other than a string passed as an argument', function () {
+        expect(sayHello([])).toBe("Hello, World!")
+    })
 })
 

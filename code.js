@@ -48,3 +48,8 @@ function isVowel(input) {
     }
 }
 
+// add
+
+function add(a,b) {
+    return parseFloat(a) + parseFloat(b);
+}
